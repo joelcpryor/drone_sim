@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probabilities</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        
+        .block h3 {
+            display: inline-block;
+        }
+
+        .block input {
+            display: inline-block;
+        }
+
+        #container {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id='container'>
+        <h1>What are the odds?</h1>
+        <br>
+        <h3><em>This program simulates the combat feature in DRONE, enabling players to determine the probability of winning or losing a given encounter.</em></h3>
+        <div class='block'>
+            <h3>Player A dice: </h3>
+            <input type='number' id='aDiceInput' value=0>
+            <h3>  Boosts: </h3>
+            <input type='number' id='aBoostInput' value=0>
+        </div>
+        <br><br>
+        <div class='block'>
+            <h3>Player B dice: </h3>
+            <input type='number' id='bDiceInput' value=0>
+            <h3>  Boosts: </h3>
+            <input type='number' id='bBoostInput' value=0>
+        </div>
+        <br><br>
+        <h3>How many simulations? </h3>
+        <input type='number' id='itInput' value=0>
+        <br><br>
+        <button id='submit'>SUBMIT</button>
+        <br><br><br><br>
+        <p id='aPrint'>...</p>
+        <p id='bPrint'>...</p>
+        <p id='damagePrint'></p>
+        <p id='split' style='font-weight: bold;'>...</p>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
